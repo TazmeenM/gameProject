@@ -9,14 +9,15 @@ class MainMenuPanel extends JPanel implements ActionListener, KeyListener{
     private JButton startButton, settingsButton;
 
     public MainMenuPanel(){
+        this.setBackground(GameFrame.backgroundColour);
         //Adding details to the Start button
         startButton = new JButton("Start");
-        startButton.setBackground(Color.GRAY);
+        startButton.setBackground(Color.WHITE);
         startButton.addActionListener(this);
 
         //Adding details to the Settings button
         settingsButton = new JButton("Settings");
-        settingsButton.setBackground(Color.GRAY);
+        settingsButton.setBackground(Color.WHITE);
         startButton.addActionListener(this);
 
         //Creating the layout for the buttons
@@ -36,6 +37,13 @@ class MainMenuPanel extends JPanel implements ActionListener, KeyListener{
 
     public void paintComponent(Graphics g){
         super.paintComponent(g);
+    }
+
+    public void keyPressed(KeyEvent e){
+    }
+    public void keyReleased(KeyEvent e){
+    }
+    public void keyTyped(KeyEvent e){
     }
     
 }
