@@ -13,7 +13,7 @@ class GameFrame extends JFrame{
     private MainMenuPanel mainMenuPanel;
     private IntroductionPanel introductionPanel;
 
-    public GameFrame(){
+    public GameFrame() throws IOException{
         //Creating the layout
         c = getContentPane();
         gamePanels = new CardLayout();
