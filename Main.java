@@ -9,7 +9,7 @@ class Main extends JFrame{
         GameFrame frame = new GameFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
-        frame.setSize(1280, 720);
+        frame.setSize(1100, 1100);
         frame.setResizable(true);
     }
 }
