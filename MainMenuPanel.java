@@ -32,6 +32,7 @@ class MainMenuPanel extends JPanel implements ActionListener, KeyListener{
     public void actionPerformed(ActionEvent e){
         if (e.getSource() == startButton){
             GameFrame.gamePanels.show(GameFrame.c, "Introduction");
+            //GameFrame.introductionPanel.reset();
         }
     }
 

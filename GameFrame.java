@@ -12,8 +12,8 @@ class GameFrame extends JFrame{
 
     private JFrame frame;
     private MainMenuPanel mainMenuPanel;
-    private IntroductionPanel introductionPanel;
-    private SecondPanel secondPanel;
+    public ScenePanel introductionPanel;
+    private GamePanel secondPanel;
 
     public GameFrame() throws IOException{
         backgroundColour = new Color(82, 189, 255);
@@ -24,8 +24,8 @@ class GameFrame extends JFrame{
 
         //Adding the panels
         mainMenuPanel = new MainMenuPanel();
-        introductionPanel = new IntroductionPanel();
-        secondPanel = new SecondPanel();
+        introductionPanel = new ScenePanel(0, "citySkylineDrawing.png");
+        secondPanel = new GamePanel(0);
 
         c.add("Main Menu", mainMenuPanel);
         c.add("Introduction", introductionPanel);
